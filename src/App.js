@@ -3,7 +3,8 @@ import './App.css';
 import Tasks from './Tasks';
 import { eventWrapper } from '@testing-library/user-event/dist/utils';
 import { v4 as uuidv4 } from 'uuid';
-import { Button } from '@mui/material';
+import { Button, Fab} from '@mui/material';
+
 function App() {
 
 
@@ -15,6 +16,11 @@ function App() {
   const [taskTitle, setTaskTitle] = useState("")
   const [id, setId] = useState("")
   const [changeFlag, setChangeFlag] = useState("add") //, useState("update") // cambio de estado para los botones add & Update
+
+
+
+
+
 
 
   function addCreate() {
@@ -79,10 +85,10 @@ function App() {
   return (
     <div>
       <h1>Task lists</h1>
-      {!showForm && <button onClick={() => {
+      {!showForm && <Button size ="small"  variant="contained" aria-label="add" onClick={() => {
         setChangeFlag("add")
         setShowForm(true)
-      }}>add</button>}
+          }}>add</Button>}
       {showForm && <form>
         <label for="tasktitle">tasktitle</label>
         <input type="text" id="tasktitle" value={taskTitle} onChange={(event) => {
@@ -111,7 +117,7 @@ function App() {
         setOwner={setOwner}
         setTaskTitle={setTaskTitle}
         setId={setId}
-        
+
       />
 
 
