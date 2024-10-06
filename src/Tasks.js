@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@mui/material";
 
 const Tasks = ({ tasks, onDelete, showForm, setShowForm, handleUpdate, setChangeFlag, changeFlag, setOwner, setTaskTitle, taskTitle, setId }) => {
 
@@ -32,9 +33,10 @@ const Tasks = ({ tasks, onDelete, showForm, setShowForm, handleUpdate, setChange
                 }}>
                     Update
                 </button></td>
+                
             </tr>)}
         </table >
         }</>
-}
-
+    }
 export default Tasks;
+
