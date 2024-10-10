@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './App.css';
 import Tasks from './Tasks';
-import { eventWrapper } from '@testing-library/user-event/dist/utils';
 import { v4 as uuidv4 } from 'uuid';
-import { Button, Fab} from '@mui/material';
+import { Button, ButtonGroup} from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
 
-
-
-
+  const navigate = useNavigate()
   const [tasks, setTasks] = useState([])
   const [showForm, setShowForm] = useState(false)
   const [owner, setOwner] = useState("")
   const [taskTitle, setTaskTitle] = useState("")
   const [id, setId] = useState("")
   const [changeFlag, setChangeFlag] = useState("add") //, useState("update") // cambio de estado para los botones add & Update
-
-
-
-
 
 
 
@@ -84,7 +78,29 @@ function App() {
 
   return (
     <div>
-      <h1>Task lists</h1>
+      
+      <h1 style={{ textAlign:' center'}}>Task lists</h1>
+      <ButtonGroup style={{alignItems: "center"}}>
+          <Button
+            variant="contained"
+            onClick={() => navigate('/about')} 
+          >
+            About
+          </Button>
+
+          <Button 
+          
+          onClick={() => navigate('/home')} 
+            >Home
+          </Button>
+
+          <Button
+            variant="contained"
+          onClick={() => navigate('/contact')} 
+          >
+            Contact
+          </Button>
+        </ButtonGroup>
       {!showForm && <Button size ="small"  variant="contained" aria-label="add" onClick={() => {
         setChangeFlag("add")
         setShowForm(true)
@@ -126,6 +142,6 @@ function App() {
 
 }
 
-export default App
+export default App;
 
 

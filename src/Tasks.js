@@ -1,21 +1,21 @@
 import React from "react";
-import { Button, ButtonGroup, Fab, Paper } from "@mui/material";
+import { Button, ButtonGroup, Paper } from "@mui/material";
 
 const Tasks = ({ tasks, onDelete, showForm, setShowForm, handleUpdate, setChangeFlag, changeFlag, setOwner, setTaskTitle, taskTitle, setId }) => {
 
     // console.log(tasks)
     return <>
         {!showForm && < table >
-            <Paper sx={{ height: 400, width: '100%' }}>
+            <Paper sx={{ height: 50, width: '100%' }}>
                 <tr>
-                    <th>Id</th>
-                    <th>Task title</th>
+                   <th>Id</th>
+                    <th >Task title </th>
                     <th>Owner</th>
                     <th>Created at</th>
                     <th>Uptated at</th>
                     <th>action</th>
                 </tr>
-
+                
 
 
                 {tasks.map((task) => <tr>
