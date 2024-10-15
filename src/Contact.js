@@ -7,4 +7,4 @@ function Contact() {
     </div>
   );
 }
-export default About;
+export default Contact;
