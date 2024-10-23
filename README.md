@@ -1,3 +1,13 @@
+# `Async-Await`
+Se utiliza para definir una función asíncrona, lo que permite que el código continúe ejecutándose mientras se espera la respuesta de una operación más lenta. Junto a async, se emplea la palabra clave await, que indica al programa cuándo debe detenerse y esperar el resultado de dicha operación antes de continuar.
+
+## `Promise`
+Por otro lado, las promesas son estructuras que permiten manejar de forma más sencilla los resultados de operaciones asincrónicas en el código. Sin embargo, cuando se trata de múltiples promesas, el encadenamiento mediante el uso de .then puede volverse complejo y difícil de manejar debido a la creciente cantidad de variables y condiciones.
+
+En cuanto a diferencial es mas  comodo en cuanto a simplicidad  en el uso y menos linea de codigo para el mismo tipo de tarea usar Async - Await
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
