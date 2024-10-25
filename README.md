@@ -6,6 +6,13 @@ Por otro lado, las promesas son estructuras que permiten manejar de forma más s
 
 En cuanto a diferencial es mas  comodo en cuanto a simplicidad  en el uso y menos linea de codigo para el mismo tipo de tarea usar Async - Await
 
+## Front-End & Back-End
+El front-end es todo aquello visual que se muestra en los desarrollos de software, y se maneja utilizando tres tipos de lenguajes principales. El HTML es el encargado de toda la estructura y el contenido de la página, mientras que con CSS se le da un diseño personalizado con un estilo propio. Por último, con JavaScript se genera toda la interacción del sitio, permitiendo que los elementos respondan a las acciones del usuario. Además, existen muchas librerías y frameworks como React que hacen el desarrollo del front-end más sencillo, permitiendo que todo se gestione desde un entorno unificado.
+
+Por otro lado, el back-end es lo que ocurre detrás de escena en el software, donde se gestiona la lógica y los datos que permiten que la aplicación funcione correctamente. Utiliza lenguajes de programación como Python, Java o PHP para conectar el front-end con bases de datos, procesar solicitudes y devolver información. También maneja la seguridad, almacenamiento y autenticación de usuarios, asegurándose de que toda la información esté protegida y que las funciones se ejecuten de manera eficiente.
+
+La sinergia entre el front-end y el back-end es clave para que una aplicación web funcione de manera completa y eficiente. Mientras el front-end se encarga de la experiencia visual e interactiva del usuario, el back-end maneja la lógica, los datos y las respuestas que el front-end necesita para mostrar la información adecuada. Juntos, forman un sistema integral donde la interacción del usuario con la interfaz se sincroniza con la gestión de datos y procesos en el servidor, ofreciendo una experiencia fluida y funcional.
+
 
 
 # Getting Started with Create React App
