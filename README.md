@@ -14,6 +14,53 @@ Por otro lado, el back-end es lo que ocurre detrás de escena en el software, do
 La sinergia entre el front-end y el back-end es clave para que una aplicación web funcione de manera completa y eficiente. Mientras el front-end se encarga de la experiencia visual e interactiva del usuario, el back-end maneja la lógica, los datos y las respuestas que el front-end necesita para mostrar la información adecuada. La comunicación entre ambos se realiza mediante peticiones del front-end hacia el back-end a través de JavaScript, utilizando el protocolo HTTP hacia una API REST, que es una interfaz de comunicación expuesta. Para asegurar que la petición generada tenga los permisos necesarios, se configuran encabezados CORS, que son reglas que protegen la información y regulan qué solicitudes externas pueden interactuar con los datos. Juntos, el front-end y el back-end forman un sistema integral donde la interacción del usuario con la interfaz se sincroniza de forma segura con la gestión de datos y procesos en el servidor, ofreciendo una experiencia fluida y protegida.
 
 
+
+##Protocolos 
+
+HTTP (Hypertext Transfer Protocol): El protocolo de comunicación para la transferencia de datos en la web.
+HTTPS (HTTP Secure): Es HTTP con seguridad añadida (cifrado SSL/TLS) autenticacion del dueño del sitio web para proteccion de datos.
+FTP (File Transfer Protocol): Para transferir archivos entre servidores que esten conectados a una red.
+SMTP (Simple Mail Transfer Protocol): Para el envío de correos electrónicos.
+WebSocket: Permite comunicación en tiempo real entre el cliente y el servidor, ideal para aplicaciones interactivas.
+MQTT: Protocolo ligero para dispositivos IOT, adecuado para redes de baja latencia y ancho de banda limitado.
+
+##Verbos http
+
+GET: Recupera información del servidor sin modificar el estado del servidor.
+POST: Envía datos al servidor para crear un nuevo recurso o realizar una acción.
+PUT: Reemplaza un recurso existente o lo crea si no existe.
+DELETE: Elimina un recurso existente en el servidor.
+PATCH: Modifica una parte de un recurso sin reemplazarlo completamente.
+OPTIONS: Solicita los métodos que el servidor permite para un recurso determinado.
+HEAD: Similar a GET, pero solo recupera los encabezados sin el cuerpo del contenido.
+
+#ApiRest y otros Protocolos
+Una API REST (Representational State Transfer) es un estilo de arquitectura de software para sistemas distribuidos, que permite la comunicación entre aplicaciones usando HTTP.
+
+SOAP Protocolo basado en XML mas estricto que Apirest
+gRPC: Protocolo de código abierto de Google que usa HTTP/2 y es adecuado para microservicios.
+GraphQL: Protocolo de consulta de datos desarrollado por Facebook, que permite obtener solo los datos necesarios.
+
+##Server Side Rendering (SSR) 
+
+Es una tecnica  de programacion donde la ejecucion de las paginas web se realiza desde el servidor y no desde el navegador , mejorando el rendimiento, gestionando las peticiones desde el Backend para ahorrar tiempo  y recursos
+
+En frameworks como NEXT.js podemos estructurar SSR para que react sea ejecutado desde el backend siempre y cuando mi pagina web sea mas estatica que interactiva
+
+## FRAMEWORK
+
+Un Framework es un conjunto de herramientas, librerías y convenciones que simplifican el desarrollo al proporcionar una estructura básica y funcionalidades para crear aplicaciones completas. A diferencia de una librería, un framework ofrece un flujo de trabajo establecido y controlado.
+
+React es Libreria porque su ejecucion es mas libre a la hora de gestionar ,su funcion general es resolver necesidades y  no requiere un flujo de trabajo en especifico en un framework  gestionas proyectos, los frameworks estan adaptados con librerias y herramientas para  mejorar tiempos y facilitar tareas de mayor escala.
+
+laravel, django,vue.js.spring
+
+##Django
+
+Django es un framework web de alto nivel para Python, diseñado para desarrollar aplicaciones web rápidas, seguras y escalables. Sigue el patrón MVC (Model-View-Controller), aunque en Django se usa MTV (Model-Template-View). Ofrece muchas características integradas, como autenticación, ORM, y protección contra ataques de seguridad, lo que facilita el desarrollo de aplicaciones robustas sin tener que configurar elementos básicos desde cero.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
